@@ -1,0 +1,22 @@
+<input>show configuration services epg pgw apn wapgw | match address-allocation</input>
+        <output>
+        address-allocation sharedIpPool;
+	6:50 PM
+	        <input>show configuration services epg pgw apn wapgw pdp-context shared-ip-pool</input>
+        <output>
+        ip-pool-test.bj;
+	6:50 PM
+ > show configuration services epg pgw shared-ip-pool ip-pool-test.bj 
+
+         ip-pool-ipsec.ericsson.com {
+                    status unblocked;
+                    address {
+                        10.3.13.0/24;
+                    }
+                    ipv6-address {
+                        2001:470:f8bf::/88;
+                    }
+                    ipv6-address {
+                        2001:470:f8bf::/98;
+                    }
+                }
